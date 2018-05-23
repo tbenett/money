@@ -4,5 +4,5 @@
 ** TODO Make "amount" private
 ** DONE *Dollar side effects?*
 ** TODO Money rounding?
-** TODO =equals()=
+** DONE =equals()=
 ** TODO =hashCode()=
