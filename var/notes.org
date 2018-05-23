@@ -1,0 +1,6 @@
+* Steps
+** TODO =$5 + 10 CHF = $10 if rate is 2:1=
+** DONE =$5 * 2 = $10=
+** TODO Make "amount" private
+** DONE *Dollar side effects?*
+** TODO Money rounding?
