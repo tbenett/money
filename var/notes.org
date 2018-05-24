@@ -1,11 +1,11 @@
 * Steps
 ** TODO =$5 + 10 CHF = $10 if rate is 2:1=
 ** DONE =$5 * 2 = $10=
-** TODO Make "amount" private
+** DONE Make "amount" private
 ** DONE *Dollar side effects?*
-** TODO Money rounding?
-** DONE make =amount= private
+** Money rounding?
 ** DONE =equals()=
 ** TODO =hashCode()=
 ** TODO Equals null
 ** TODO Equals object
+** DONE =5 CHF * 2 = 10 CHF=
