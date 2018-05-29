@@ -7,7 +7,7 @@
 ** TODO =hashCode()=
 ** TODO Money rounding?
 ** DONE Compare Francs with Dollars
-** TODO currency?
+** DONE currency?
 ** TODO Delete testFrancMultiplication?
 ** DONE =$5 * 2 = $10=
 ** DONE =5 CHF * 2 = 10 CHF=
