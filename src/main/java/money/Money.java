@@ -1,10 +1,8 @@
 package money;
 
-abstract class Money {
-  protected int amount;
+class Money {
   protected final String currency;
-
-  abstract Money times(int multiplier);
+  protected int amount;
 
   Money(int amount, String currency) {
     this.amount = amount;
@@ -12,11 +10,15 @@ abstract class Money {
   }
 
   static Money dollar(int amount) {
-    return new Dollar(amount, "USD");
+    return new Money(amount, "USD");
   }
 
   static Money franc(int amount) {
-    return new Franc(amount, "CHF");
+    return new Money(amount, "CHF");
+  }
+
+  Money times(int multiplier) {
+    return new Money(amount * multiplier, currency);
   }
 
   @Override
@@ -24,8 +26,15 @@ abstract class Money {
     final Money money = (Money) o;
 
     return amount == money.amount
-        && getClass() == money.getClass();
+        && currency.equals(money.currency);
   }
 
-  abstract String currency();
+  String currency() {
+    return currency;
+  }
+
+  @Override
+  public String toString() {
+    return amount + " " + currency;
+  }
 }
